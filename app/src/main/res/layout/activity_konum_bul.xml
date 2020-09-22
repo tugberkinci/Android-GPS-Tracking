@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonumBul"
+    android:background="#FDF2E9">
+
+    <Button
+        android:id="@+id/konumBul"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="104dp"
+        android:text="Konum Bul"
+        app:layout_constraintBottom_toTopOf="@+id/konumKaydet"
+        app:layout_constraintEnd_toEndOf="@+id/konumKaydet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/konumKaydet"
+        android:background="@drawable/button_sekil"/>
+
+    <Button
+        android:id="@+id/konumKaydet"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_sekil"
+        android:text="Konum Kaydet"
+        app:layout_constraintBottom_toTopOf="@+id/kayıtlıKonumlar"
+        app:layout_constraintEnd_toEndOf="@+id/kayıtlıKonumlar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kayıtlıKonumlar" />
+
+    <TextView
+        android:id="@+id/auth"
+        android:layout_width="263dp"
+        android:layout_height="28dp"
+        android:text="id:"
+        app:layout_constraintBottom_toTopOf="@+id/konumBul"
+        app:layout_constraintEnd_toEndOf="@+id/konumBul"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/konumBul"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/kayıtlıKonumlar"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/button_sekil"
+        android:text="Kayıtlı konumlar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/konum"
+        android:layout_width="234dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/konumKaydet"
+        app:layout_constraintEnd_toEndOf="@+id/konumBul"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/konumBul"
+        app:layout_constraintTop_toBottomOf="@+id/konumBul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

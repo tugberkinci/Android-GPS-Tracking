@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="#FDF2E9">
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="196dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button_sekil"
+        android:text="Anonim Olarak Devam Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRead"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRead"
+        app:layout_constraintStart_toStartOf="@+id/buttonRead"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anonim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
